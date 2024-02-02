@@ -1,0 +1,421 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #a18277;
+  --tertiary-color: #daccc5;
+  --light-text-color: rgb(255, 255, 255);
+  --dark-text-color: #18191C;
+  --button-color: #B96565;
+  --button-hover-color: #FF0000;
+  --drop-shadow-color: rgba(0, 0, 0, .7);
+}
+
+:root, body {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-color);
+  font-family: Geneva, Verdana, sans-serif;
+  color: var(--light-text-color);
+}
+
+a { text-decoration: none; }
+
+button {
+  padding: 30px 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: var(--light-text-color);
+  font-size: 30px;
+  transition: all 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.action-block-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 500px;
+  height: 120px;
+  width: 100%;
+  z-index: 10;
+}
+
+.action-block-bottom {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 850px;
+  height: 120px;
+  width: 100%;
+  z-index: 10;
+}
+
+.black-gradient {
+  position: absolute;
+  height: 1500px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 45%);
+}
+
+.black-gradient-reverse {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(rgb(0, 0, 0) 45%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
+}
+
+.bottom-spacer {
+  width: 100%;
+  height: 650px;
+}
+
+.bottom-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 900px;
+  background-image: url(../public/images/kendall-midnight-lightning.jpg);
+  background-size: cover;
+}
+
+.button-background {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  background-color: var(--secondary-color);
+}
+
+.button-background-top {
+  border-radius: 0 100px 100px 0;
+  left: 0;
+}
+
+.button-background-bottom {
+  border-radius: 100px  0 0 100px;
+  right: 0;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.footer {
+  position: fixed;
+  background-color: var(--primary-color);
+  filter: drop-shadow(0 -4px 6px var(--drop-shadow-color));
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: var(--light-text-color);
+  font-size: 18px;
+  margin: 0 20px;
+  transition: all 0.1s ease-out;
+}
+
+.header a:hover {
+  cursor: pointer;
+  color: var(--button-color);
+  font-size: 19px;
+  transition: all 0.2s ease-in;
+}
+
+.header-band {
+  position: fixed;
+  width: 100%;
+  color: var(--light-text-color);
+  background-color: var(--primary-color);
+  filter: drop-shadow(0 4px 6px var(--drop-shadow-color));
+  z-index: 100;
+}
+
+.header-left {
+  padding: 5px;
+  margin: 5px 20px;
+  max-height: 50px;
+  max-width: min-content;
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+}
+
+.header-words {
+  min-width: max-content;
+  margin: 0 10px;
+}
+
+.information-item {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative; /* Add position: relative */
+}
+
+.information-words {
+  max-width: 400px;
+  z-index: 2; /* Add z-index to ensure the text is above other elements */
+}
+
+.logo {
+  height: 30px;
+  object-fit: contain;
+}
+
+.main-button {
+  position: absolute;
+  text-align: right;
+  top: 20px;
+  height: 80px;
+  width: 70%;
+  border-radius: 0 100px 100px 0;
+  z-index: 2;
+  background-color: var(--button-color);
+}
+
+.main-button-bottom {
+  text-align: left;
+  right: 0px;
+  height: 80px;
+  border-radius: 100px 0 0 100px;
+}
+
+.main-button:hover {
+  width: 75%;
+}
+
+.max-width {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.member-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.member-image-byron { background-image: url(../public/images/byron.jpg); }
+.member-image-kendall { background-image: url(../public/images/kendall.jpg); }
+.member-image-kennady { background-image: url(../public/images/kennady.jpg); }
+
+.niche-image {
+  height: 190px;
+  width: 582px;
+  margin-top: 200px;
+  background-image: url(../public/images/niche.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.relative-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.spacer {
+  width: 100px;
+  height: 100px;
+  flex: 1;
+}
+
+.team-information {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-block {
+  height: 800px;
+  background-image: url(../public/images/jahya.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--dark-text-color);
+}
+
+.welcome-container {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.welcome-words {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0px 50px;
+}
+
+.welcome-words h1, .welcome-words h2 {
+  margin: 5px;
+}
+
+.what-is-image {
+  height: 175px;
+  width: 250px;
+  background-image: url(../public/images/byron-maple.JPG);
+  background-size: cover;
+}
+
+.who-are-we-section {
+  position: relative;
+  text-align: right;
+  background-size: cover;
+}
+
+.why-image {
+  height: 250px;
+  width: 200px;
+  background-image: url(../public/images/byron-penitente.jpg);
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1250px) {
+  .black-gradient { height: 1200px; }
+  .welcome-block { height: 600px; }
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .action-block-bottom { 
+    top: 425px;
+    right: 5%;
+    height: 100px;
+  }
+
+  .action-block-top { 
+    top: 300px;
+    left: 5%;
+    right: 0px;
+  }
+  .black-gradient { height: 520px; }
+  .black-gradient-reverse { background-image: linear-gradient(rgb(0, 0, 0) 42%, rgba(0, 0, 0, 0) 100%); }
+  .bottom-background { height: 350px; }
+  .bottom-spacer { height: 50px;}
+
+  .button-background { 
+    width: auto; 
+    margin-top: 100px;
+  }
+
+  .button-background-top { display: none; }
+
+  .information-item {
+    margin: 20px auto 0px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .main-button { 
+    width: 90%;
+    border-radius: 100px;
+    text-align: center;
+  }
+
+
+  .main-button:hover { width: 90%; }
+
+  .main-button-bottom {
+    right: 5%;
+    border-radius: 100px;
+  }
+
+  .main-button-bottom:hover { right: 5%; }
+
+  .niche-image {
+    height: 95px;
+    width: 291px;
+    margin-top: 115px;
+  }
+
+  .phone-spacer {
+    height: 40px;
+    width: 100%;
+  }
+
+  .spacer { display: none; }
+  .team-information { height: 570px;}
+  .team-member-container { display: none; }
+  .team-member-container.selected { display: block; } 
+
+  .welcome-block { 
+    height: 200px; 
+    margin-bottom: 250px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .phone-absence {
+    display: none;
+  }
+}
