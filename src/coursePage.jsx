@@ -6,12 +6,13 @@ import modulesData from './modulesData';
 
 const CoursePage = () => {
   const [selectedModule, setSelectedModule] = useState(0);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const modules = modulesData;
 
   return (
     <div className="course-page">
-      <Sidebar modules={modules} onSelectModule={setSelectedModule} />
+      <Sidebar modules={modules} onSelectModule={setSelectedModule} openMenu={openMenu} onOpenMenu={setOpenMenu} />
       <Module content={modules[selectedModule]} />
     </div>
   );

@@ -5,16 +5,16 @@ import { Link } from 'react-router-dom';
 function App() {
 
   return (
-    <body>
+    <div>
       <div className="black-gradient"></div>
       <div className="header-band">
         <div className="header max-width">
           <div className="header-left">
             <img src={logo} alt="mbs logo" className='logo'/>
           </div>
-          <div className='header-right phone-absence'>
+          <div className=''>
             <Link to={'learn'}>Learn Technique</Link>
-            <a href="https://calendly.com/mbs-climbing">Schedule Coaching Session</a>
+            <a className='phone-absence' href="https://calendly.com/mbs-climbing">Schedule Coaching Session</a>
           </div>
         </div>
       </div> 
@@ -42,6 +42,7 @@ function App() {
         <div className="what-is-image"></div>
       </div>
       <div className="information-item flex-reverse">
+        <div className="background-color"></div>
         <div className="information-words">
           <h2>Why Niche?</h2>
           <p>Climbing is a full body sport and learning to use your whole body to climb well will do more for your climbing than any amount of finger training could ever do.</p>
@@ -83,7 +84,7 @@ function App() {
       <div className="footer">
 
       </div>
-    </body>
+    </div>
   )
 }
 

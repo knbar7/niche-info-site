@@ -84,11 +84,18 @@ p {
   z-index: 10;
 }
 
+.background-color {
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 200vh;
+}
+
 .black-gradient {
   position: absolute;
   height: 1500px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 45%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 30%);
 }
 
 .black-gradient-reverse {
@@ -142,19 +149,26 @@ p {
 .course-title {
   font-size: 20px;
   letter-spacing: 0;
+  text-align: center;
 }
 
 .course-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   margin: 10px;
   background-color: var(--module-background-color);
   width: 100%;
-  text-align: center;
   border-radius: 5px;
   border: 1px solid var(--secondary-color);
 }
 
 .course-title-headbar {
   background-color: var(--primary-color);
+}
+
+.course-title-logo {
+  margin-left: 10px;
 }
 
 .flex-reverse {
@@ -276,6 +290,8 @@ p {
 .member-image-byron { background-image: url(../public/images/byron.jpg); }
 .member-image-kendall { background-image: url(../public/images/kendall.jpg); }
 .member-image-kennady { background-image: url(../public/images/kennady.jpg); }
+
+.mobile-only-button { margin: auto;}
 
 .module {
   display: flex;
@@ -406,6 +422,7 @@ p {
 }
 
 .what-is-image {
+  z-index: 2;
   height: 175px;
   width: 250px;
   background-image: url(../public/images/byron-maple.JPG);
@@ -419,6 +436,7 @@ p {
 }
 
 .why-image {
+  z-index: 2;
   height: 250px;
   width: 200px;
   background-image: url(../public/images/byron-penitente.jpg);
@@ -427,6 +445,7 @@ p {
 
 @media only screen and (max-width: 1250px) {
   .black-gradient { height: 1200px; }
+  .module-content-container { padding: 10px;}
   .welcome-block { height: 600px; }
 }
 
@@ -447,7 +466,11 @@ p {
     left: 5%;
     right: 0px;
   }
-  .black-gradient { height: 520px; }
+  .black-gradient { 
+    height: 520px; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 45%);
+  }
+
   .black-gradient-reverse { background-image: linear-gradient(rgb(0, 0, 0) 42%, rgba(0, 0, 0, 0) 100%); }
   .bottom-background { height: 350px; }
   .bottom-spacer { height: 50px;}
@@ -480,6 +503,7 @@ p {
   }
 
   .main-button-bottom:hover { right: 5%; }
+  .module { height: 70%;}
 
   .niche-image {
     height: 95px;
@@ -493,6 +517,14 @@ p {
   }
 
   .spacer { display: none; }
+  .course-page { flex-direction: column;}
+
+  .sidebar { 
+    height: 20%;
+    width: 90%; 
+  }
+
+  .size-hidden { display: none; }
   .team-information { height: 570px;}
   .team-member-container { display: none; }
   .team-member-container.selected { display: block; } 
