@@ -2,6 +2,8 @@
   --primary-color: #000000;
   --secondary-color: #a18277;
   --tertiary-color: #daccc5;
+  --screen-background-color: rgb(205, 205, 205);
+  --module-background-color: rgb(226, 226, 226);
   --light-text-color: rgb(255, 255, 255);
   --dark-text-color: #18191C;
   --button-color: #B96565;
@@ -14,7 +16,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: var(--primary-color);
+  background-color: var(--screen-background-color);
   font-family: Geneva, Verdana, sans-serif;
   color: var(--light-text-color);
 }
@@ -128,6 +130,31 @@ p {
 .button-background-bottom {
   border-radius: 100px  0 0 100px;
   right: 0;
+}
+
+.course-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.course-title {
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.course-title-container {
+  margin: 10px;
+  background-color: var(--module-background-color);
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color);
+}
+
+.course-title-headbar {
+  background-color: var(--primary-color);
 }
 
 .flex-reverse {
@@ -250,6 +277,57 @@ p {
 .member-image-kendall { background-image: url(../public/images/kendall.jpg); }
 .member-image-kennady { background-image: url(../public/images/kennady.jpg); }
 
+.module {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  flex: 1;
+  margin: 1vh;
+  color: var(--dark-text-color);
+  background-color: var(--module-background-color);
+}
+
+.module-content-container {
+  flex: 1;
+  max-width: 700px;
+  margin: auto;
+}
+
+.module-list {
+  flex: 1;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.module-scroll-container {
+  overflow-y: scroll;
+}
+
+.module-selection-box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid var(--dark-text-color);
+  height: 40px;
+  width: 90%;
+  margin: 0px 20px 5px;
+}
+
+.module-selection-box:hover { 
+  cursor: pointer;
+}
+
+.module-title {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 0;
+  border-bottom: 1px solid var(--screen-background-color);
+}
+
 .niche-image {
   height: 190px;
   width: 582px;
@@ -264,6 +342,17 @@ p {
   height: 100%;
   width: 100%;
   position: relative;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 1vh;
+  height: 98vh;
+  color: var(--dark-text-color);
 }
 
 .spacer {

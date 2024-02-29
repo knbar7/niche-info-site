@@ -1,5 +1,6 @@
-import './App.css'
+import './App.css';
 import logo from '../public/images/niche.png';
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
             <img src={logo} alt="mbs logo" className='logo'/>
           </div>
           <div className='header-right phone-absence'>
+            <Link to={'learn'}>Learn Technique</Link>
             <a href="https://calendly.com/mbs-climbing">Schedule Coaching Session</a>
           </div>
         </div>
