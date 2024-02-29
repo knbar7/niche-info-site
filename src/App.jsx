@@ -12,7 +12,7 @@ function App() {
           <div className="header-left">
             <img src={logo} alt="mbs logo" className='logo'/>
           </div>
-          <div className=''>
+          <div className='header-right'>
             <Link to={'learn'}>Learn Technique</Link>
             <a className='phone-absence' href="https://calendly.com/mbs-climbing">Schedule Coaching Session</a>
           </div>

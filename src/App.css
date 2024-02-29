@@ -462,6 +462,7 @@ p {
   }
 
   .action-block-top { 
+    width: auto;
     top: 300px;
     left: 5%;
     right: 0px;
