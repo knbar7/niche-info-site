@@ -520,7 +520,7 @@ p {
   .course-page { flex-direction: column;}
 
   .sidebar { 
-    height: 20%;
+    height: auto;
     width: 90%; 
   }
 
