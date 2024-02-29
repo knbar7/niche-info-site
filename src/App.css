@@ -504,7 +504,8 @@ p {
   }
 
   .main-button-bottom:hover { right: 5%; }
-  .module { height: 70%;}
+  .module { height: min-content;}
+  .module-scroll-container { overflow: unset;}
 
   .niche-image {
     height: 95px;
